@@ -6,7 +6,7 @@
 }
 html {
 	font-size: 10px;
-	font-family: 'Sarabun', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
 a {
@@ -19,10 +19,10 @@ a {
 	align-items: center;
 	justify-content: center;
 }
-.icon img {
+img {
 	height: 100%;
 	width: 100%;
-
+	object-fit: cover;
 }
 p {
 	color: black;
@@ -42,7 +42,7 @@ p {
 	text-align: center;
 }
 .section-title span {
-	color: #FF4949;
+	color: crimson;
 }
 
 .cta {
@@ -50,7 +50,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid red;
+	border: 2px solid crimson;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -60,7 +60,7 @@ p {
 }
 .cta:hover {
 	color: white;
-	background-color: rgb(183, 5, 5);
+	background-color: crimson;
 }
 .brand h1 {
 	font-size: 3rem;
@@ -68,8 +68,7 @@ p {
 	color: white;
 }
 .brand h1 span {
-	color:  rgb(183, 5, 5);
-	font-size:xx-large;
+	color: crimson;
 }
 
 /* Header section */
@@ -98,7 +97,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: #383838;
+	background-color: rgb(31, 30, 30);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -141,7 +140,7 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: rgb(183, 5, 5);
+	color: crimson;
 }
 #header .hamburger {
 	height: 60px;
@@ -215,7 +214,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 0.6;
+	opacity: 0.7;
 	z-index: -1;
 }
 #hero .hero {
@@ -249,18 +248,18 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: rgba(199, 29, 29, 0.763);
+	background-color: crimson;
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
 #hero h1:nth-child(1) span {
-	animation-delay: 0.1s;
+	animation-delay: 0.5s;
 }
 #hero h1:nth-child(2) span {
-	animation-delay: 1.27s;
+	animation-delay: 1.5s;
 }
 #hero h1:nth-child(3) span {
-	animation-delay: 2.55s;
+	animation-delay: 2.5s;
 }
 
 /* End Hero Section */
@@ -272,9 +271,6 @@ p {
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
-}
-.floatRight{
-	float:right;margin-left:20px
 }
 #services .service-top {
 	max-width: 500px;
@@ -331,27 +327,20 @@ p {
 /* End Services Section */
 
 /* Projects section */
-#projects{
-	background-color: #191919;
-}
 #projects .projects {
 	flex-direction: column;
-	max-width: 500px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
-	background-color: #191919;
 }
 #projects .projects-header h1 {
 	margin-bottom: 50px;
-	color: antiquewhite;
 }
 #projects .all-projects {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color:#191919 ;
-
 }
 #projects .project-item {
 	display: flex;
@@ -359,20 +348,19 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	width: 80%;
-	margin: 200px auto;
+	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
-	background-color:#191919;
 }
 #projects .project-info {
-	padding: 100px;
+	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #292828 3%, #191919 50%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
 #projects .project-info h1 {
@@ -388,11 +376,10 @@ p {
 	color: white;
 }
 #projects .project-img {
-	flex-basis: 47%;
-	height: 100px;
-	position: relative;
+	flex-basis: 50%;
+	height: 300px;
 	overflow: hidden;
-	opacity: 0.8;
+	position: relative;
 }
 #projects .project-img:after {
 	content: '';
@@ -401,7 +388,8 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	opacity: 0.8;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.7;
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
@@ -454,7 +442,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid red;
+	border: 7px solid crimson;
 	z-index: -1;
 }
 /* End About Section */
@@ -572,7 +560,7 @@ p {
 }
 @keyframes text_reveal_name {
 	100% {
-		color: #B20600;
+		color: crimson;
 		font-weight: 500;
 	}
 }
@@ -622,30 +610,7 @@ p {
 	}
 	/* End Project */
 
-	/* About */
-	#about .about {
-		flex-direction: row;
-	}
-	#about .col-left {
-		width: 600px;
-		height: 400px;
-		padding-left: 60px;
-	}
-	#about .about .col-left .about-img::after {
-		left: -45px;
-		top: 34px;
-		height: 98%;
-		width: 98%;
-		border: 10px solid crimson;
-	}
-	#about .col-right {
-		text-align: left;
-		padding: 30px;
-	}
-	#about .col-right h1 {
-		text-align: left;
-	}
-	/* End About */
+	
 
 	/* contact  */
 	#contact .contact {
