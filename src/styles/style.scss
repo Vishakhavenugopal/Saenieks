@@ -59,23 +59,6 @@ p {
   }
 }
 
-.cta {
-  display: inline-block;
-  padding: 10px 30px;
-  color: white;
-  background-color: transparent;
-  border: 2px solid crimson;
-  font-size: 32px;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-top: 30px;
-  transition: 0.3s ease;
-  transition-property: background-color, color;
-}
-.cta:hover {
-  color: white;
-  background-color: crimson;
-}
 .brand h1 {
   font-size: 40px;
   text-transform: uppercase;
@@ -83,6 +66,11 @@ p {
 
   span {
     color: crimson;
+  }
+}
+@media screen and (max-width: 768px) {
+  .brand h1 {
+    font-size: 32px;
   }
 }
 
@@ -279,6 +267,29 @@ p {
 }
 #hero h1:nth-child(3) span {
   animation-delay: 2.5s;
+}
+.cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+
+  &:hover {
+    color: white;
+    background-color: crimson;
+  }
+}
+@media screen and (max-width: 768px) {
+  #hero h1 {
+    font-size: 48px;
+  }
 }
 
 /* End Hero Section */
