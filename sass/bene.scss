@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Prata|Poppins&display=swap');
+
 body {
 	background: #0f0f0f;
 }
@@ -22,11 +23,13 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 	column-count: 1;
 	column-gap: 20px;
 
 	div {
 		width: 370px;
+		height: 140px;
 		padding: 10px;
 		margin: 0 0 20px;
 		// border: 1px solid bisque;
@@ -47,7 +50,4 @@ h2 {
 		color: #ece1e1;
 		margin-top: 0;
 	}
-}
-
-@media only screen and (min-width: 768px) {
 }
