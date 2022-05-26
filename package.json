@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "sass --watch --no-source-map src/styles:dist/styles"
+    "build": "sass src/styles:dist/styles",
+    "start": "sass --watch --no-source-map src/styles:dist/styles"
   },
   "dependencies": {
     "sass": "^1.52.1"
