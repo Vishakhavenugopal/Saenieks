@@ -1,0 +1,11 @@
+
+# For configuration options, see: https://www.getzola.org/documentation/getting-started/configuration/
+
+title = "saenieks"
+
+# You might want to change this to your own domain
+base_url = "https://saenieks.vercel.app/"
+
+description = "saenieks, made with Zola"
+
+compile_sass = true
