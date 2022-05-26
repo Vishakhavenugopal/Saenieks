@@ -1,9 +1,16 @@
 {
+  "name": "saenieks",
+  "private": true,
   "scripts": {
-    "build": "sass src/styles:dist/styles",
-    "start": "sass --watch --no-source-map src/styles:dist/styles"
+    "dev": "zola-bin serve --open",
+    "build": "zola-bin build"
   },
-  "dependencies": {
-    "sass": "^1.52.1"
+  "devDependencies": {
+    "zola-bin": "^0.3.3"
+  },
+  "prettier": {
+    "printWidth": 150,
+    "useTabs": true,
+    "singleQuote": true
   }
 }
