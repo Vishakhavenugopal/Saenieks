@@ -1,7 +1,21 @@
+.main {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .about {
   width: 100%;
   padding: 70px 0px;
   background-color: #191919;
+}
+
+.about-img {
+  img {
+    width: 550px;
+  }
 }
 .about-text {
   /* display: flex; */
@@ -12,10 +26,7 @@
     text-transform: capitalize;
     margin-bottom: 20px;
   }
-  img {
-    height: auto;
-    width: 500px;
-  }
+
   h5 {
     color: #f9004d;
     letter-spacing: 2px;
@@ -28,17 +39,22 @@
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: Roboto, sans-serif;
     margin-bottom: 45px;
   }
 }
-.main {
-  width: 100%;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .about img {
+    height: 300px;
+    margin: 0;
+    border-radius: 0;
+  }
 }
+
 button {
   background-color: rgba(199, 29, 29, 0.763);
   color: white;
@@ -53,16 +69,6 @@ button {
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .main {
-    flex-direction: column;
-  }
-  .about img {
-    height: 300px;
-    margin: 0;
-    border-radius: 0;
   }
 }
 .js-scroll {
