@@ -1,11 +1,15 @@
+{% import "macros.html" as macros %}
+
 <html>
   <head>
     <title>Gallery</title>
-
+    <link rel="stylesheet" href="/common.css" />
     <link rel="stylesheet" href="/gall.css" />
   </head>
 
   <body>
+    {{ macros::NavigationBar() }}
+
     <div class="container">
       <h1 class="heading">Gallery</h1>
 

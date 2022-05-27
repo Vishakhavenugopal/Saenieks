@@ -1,3 +1,5 @@
+{% import "macros.html" as macros %}
+
 <html>
   <head>
     <title>Benefits</title>
@@ -5,22 +7,31 @@
     <link rel="stylesheet" href="/bene.css" />
     <link rel="stylesheet" href="/common.css" />
     <link rel="stylesheet" href="/spon.css" />
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js" defer></script>
+    {#
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
     <script src="/spon.js" defer></script>
+    #}
   </head>
 
   <body>
+    {{ macros::NavigationBar() }}
+
     <div class="container">
       <h2 class="Sponsor">Our Sponsors</h2>
-      <section class="customer-logos slider">
-        <div class="slide"><img src="/assets/sponsors/cycle.webp" /></div>
-        <div class="slide"><img src="/assets/sponsors/indian-oil.webp" /></div>
-        <div class="slide"><img src="/assets/sponsors/sb.webp" /></div>
-        <div class="slide"><img src="/assets/sponsors/ss-vector.webp" /></div>
-        <div class="slide"><img src="/assets/sponsors/ss.webp" /></div>
-        <div class="slide"><img src="/assets/sponsors/mobil.webp" /></div>
-      </section>
+      <div class="customer-logos">
+        <img src="/assets/sponsors/cycle.webp" />
+        <img src="/assets/sponsors/indian-oil.webp" />
+        <img src="/assets/sponsors/sb.webp" />
+        <img src="/assets/sponsors/ss-vector.webp" />
+        <img src="/assets/sponsors/ss.webp" />
+        <img src="/assets/sponsors/mobil.webp" />
+      </div>
     </div>
     <h2 class="secondary">Benefits To Sponsors</h2>
     <section class="benefits-list">

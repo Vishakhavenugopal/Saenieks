@@ -19,3 +19,30 @@
     {% endfor %}
   </div>
 {% endmacro SocialLinksIcons %}
+
+{% macro NavigationBar() %}
+  <section id="header">
+    <script src="/common.js" defer></script>
+    <div class="header container">
+      <div class="nav-bar">
+        <a href="#about" class="brand">
+          <h1>Team Sae<span style="font-weight: bolder">nie</span>ks</h1>
+        </a>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#about">About</a></li>
+            {#
+            <li><a href="#projects">News</a></li>
+            #}
+            <li><a href="#Team">Team</a></li>
+            <li><a href="#about">Sponsorship</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endmacro  %}
