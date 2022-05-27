@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Prata|Poppins&display=swap');
 
+body {
+  background-color: #191919;
+}
+
+.Sponsor {
+  text-align: center;
+  padding: 20px;
+  color: crimson;
+  display: block;
+  width: 100%;
+}
+
+.customer-logos {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
 h2 {
   font-family: 'Poppins';
   color: rgb(216, 59, 91);
