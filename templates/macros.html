@@ -1,0 +1,21 @@
+{% macro AchievementsList() %}
+  <div class="all-projects">
+    {% set ach_json = load_data(path="data/achievements.json", format="json") %}
+    {% set data = ach_json.data %}
+    {% for ach in data %}
+      <div class="project-item scroll-element js-scroll slide-{{ ach.side }}">
+        <div class="project-info">
+          <h1 style="color: #ff4949">{{ ach.name }} <span>({{ ach.year }})</span></h1>
+          <ul>
+            {% for item in ach.positions %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="project-img">
+          <img src="{{ ach.image }}" alt="img" />
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endmacro SocialLinksIcons %}

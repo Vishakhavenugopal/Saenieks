@@ -1,3 +1,5 @@
+{% import "macros.html" as macros %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -68,6 +70,9 @@
         <div class="projects-header">
           <h1 class="section-title" style="color: white"><span>Ac</span>hievements</h1>
         </div>
+
+        {{ macros::AchievementsList() }}
+        <!--
         <div class="all-projects">
           <div class="project-item scroll-element js-scroll slide-left">
             <div class="project-info">
@@ -122,6 +127,7 @@
             </div>
           </div>
         </div>
+        -->
       </div>
     </section>
 

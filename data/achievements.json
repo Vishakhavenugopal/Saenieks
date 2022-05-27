@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "name": "Champion Of Champions",
+      "year": "2021",
+      "positions": [
+        "1st in Design",
+        "1st in Cost",
+        "2nd in Business plan",
+        "1st position Overall"
+      ],
+      "image": "/assets/2021.webp",
+      "side": "left"
+    },
+    {
+      "name": "Baja SAE India",
+      "year": "2020",
+      "positions": [
+        "4th in Design",
+        "8th position Overall (RWD)"
+      ],
+      "image": "/assets/2020.webp",
+      "side": "right"
+    },    
+    {
+      "name": "Baja SAE India",
+      "year": "2019",
+      "positions": [
+        "2nd in Manoeuvrability",
+        "5th in Endurance",
+        "6th position Overall"
+      ],
+      "image": "/assets/2019.webp",
+      "side": "left"
+    },    
+    {
+      "name": "Baja SAE India",
+      "year": "2018",
+      "positions": [
+        "1st in Engineering Design",
+        "7th Sled Pull",
+        "6th position Overall"
+      ],
+      "image": "/assets/2018.webp",
+      "side": "right"
+    }
+  ]
+}
