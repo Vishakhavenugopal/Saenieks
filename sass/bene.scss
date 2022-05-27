@@ -2,43 +2,57 @@
 
 body {
   background-color: #191919;
+  padding-top: 80px;
 }
 
-.Sponsor {
+h2 {
   text-align: center;
-  padding: 20px;
-  color: crimson;
-  display: block;
-  width: 100%;
+  color: #262729;
+  width: 220px;
+  padding: 5px;
+  margin: 0 auto 10px;
+  background-color: crimson;
+  border-radius: 0 0 3px 3px;
+}
+
+.sponsor-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 15px;
+  background: #262729;
+  border-radius: 8px;
 }
 
 .customer-logos {
   display: flex;
-  width: 100%;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    height: 100px;
+    width: auto;
+  }
 }
 
-h2 {
-  font-family: 'Poppins';
-  color: rgb(216, 59, 91);
+.benefits {
   text-align: center;
+  border-radius: 5px;
+  background: #262729;
+  width: clamp(400px, 50%, 600px);
+  padding: 0px 10px 5px;
+  margin: 20px auto;
 }
 .benefits-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  column-count: 1;
-  column-gap: 20px;
+  text-align: left;
+  list-style-type: none;
 
-  div {
-    width: 370px;
-    height: 140px;
+  li {
     padding: 10px;
-    margin: 0 0 20px;
-    // border: 1px solid bisque;
-    border-radius: 8px;
-    background-image: linear-gradient(60deg, #212427 0%, #28282a 100%);
   }
   h3 {
     font-family: Roboto;
@@ -46,12 +60,11 @@ h2 {
     margin: 5px;
     padding: 5px;
     border-bottom: 1px solid #ece1e1;
-    color: rgb(235, 15, 59);
+    color: crimson;
   }
   p {
     font-size: 14px;
     font-family: Roboto;
     color: #ece1e1;
-    margin-top: 0;
   }
 }
