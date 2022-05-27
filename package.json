@@ -1,16 +1,16 @@
 {
-  "name": "saenieks",
-  "private": true,
-  "scripts": {
-    "dev": "zola-bin serve --open",
-    "build": "zola-bin build"
-  },
-  "devDependencies": {
-    "zola-bin": "^0.3.3"
-  },
-  "prettier": {
-    "printWidth": 150,
-    "useTabs": true,
-    "singleQuote": true
-  }
+	"name": "saenieks",
+	"private": true,
+	"scripts": {
+		"dev": "zola-bin serve --open",
+		"build": "zola-bin build"
+	},
+	"devDependencies": {
+		"zola-bin": "^0.3.3"
+	},
+	"prettier": {
+		"printWidth": 150,
+		"useTabs": false,
+		"singleQuote": true
+	}
 }
