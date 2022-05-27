@@ -1,53 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Prata|Poppins&display=swap');
 
-// body {
-// 	background: #0f0f0f;
-// }
 h2 {
-	font-family: 'Poppins';
-	color: rgb(216, 59, 91);
-	text-align: center;
-	// &::before {
-	//   content: "";
-	//   position: absolute;
-	//   width: 30%;
-	//   height: 8px;
-	//   z-index: -1;
-	//   bottom: -0.3em;
-	//   left: 0em;
-	//   background: purple;
-	//   border-radius: 1em;
-	// }
+  font-family: 'Poppins';
+  color: rgb(216, 59, 91);
+  text-align: center;
 }
 .benefits-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	column-count: 1;
-	column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-count: 1;
+  column-gap: 20px;
 
-	div {
-		width: 370px;
-		height: 140px;
-		padding: 10px;
-		margin: 0 0 20px;
-		// border: 1px solid bisque;
-		border-radius: 8px;
-		background-image: linear-gradient(60deg, #212427 0%, #28282a 100%);
-	}
-	h3 {
-		font-family: Roboto;
-		font-size: 18px;
-		margin: 5px;
-		padding: 5px;
-		border-bottom: 1px solid #ece1e1;
-		color: rgb(235, 15, 59);
-	}
-	p {
-		font-size: 14px;
-		font-family: Roboto;
-		color: #ece1e1;
-		margin-top: 0;
-	}
+  div {
+    width: 370px;
+    height: 140px;
+    padding: 10px;
+    margin: 0 0 20px;
+    // border: 1px solid bisque;
+    border-radius: 8px;
+    background-image: linear-gradient(60deg, #212427 0%, #28282a 100%);
+  }
+  h3 {
+    font-family: Roboto;
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 1px solid #ece1e1;
+    color: rgb(235, 15, 59);
+  }
+  p {
+    font-size: 14px;
+    font-family: Roboto;
+    color: #ece1e1;
+    margin-top: 0;
+  }
 }

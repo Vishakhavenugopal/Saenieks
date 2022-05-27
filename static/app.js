@@ -4,51 +4,46 @@ const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a'
 const header = document.querySelector('.header.container');
 
 hamburger.addEventListener('click', () => {
-	hamburger.classList.toggle('active');
-	mobile_menu.classList.toggle('active');
+  hamburger.classList.toggle('active');
+  mobile_menu.classList.toggle('active');
 });
 
 document.addEventListener('scroll', () => {
-	var scroll_position = window.scrollY;
-	if (scroll_position > 250) {
-		header.style.backgroundColor = '#29323c';
-	} else {
-		header.style.backgroundColor = 'transparent';
-	}
+  var scroll_position = window.scrollY;
+  if (scroll_position > 250) {
+    header.style.backgroundColor = '#29323c';
+  } else {
+    header.style.backgroundColor = 'transparent';
+  }
 });
 
 menu_item.forEach((item) => {
-	item.addEventListener('click', () => {
-		hamburger.classList.toggle('active');
-		mobile_menu.classList.toggle('active');
-	});
+  item.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobile_menu.classList.toggle('active');
+  });
 });
 
-const scrollElements = document.querySelectorAll(".js-scroll");
+const scrollElements = document.querySelectorAll('.js-scroll');
 
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
 
-  return (
-    elementTop <=
-    (window.innerHeight || document.documentElement.clientHeight) / dividend
-  );
+  return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
 };
 
 const elementOutofView = (el) => {
   const elementTop = el.getBoundingClientRect().top;
 
-  return (
-    elementTop > (window.innerHeight || document.documentElement.clientHeight)
-  );
+  return elementTop > (window.innerHeight || document.documentElement.clientHeight);
 };
 
 const displayScrollElement = (element) => {
-  element.classList.add("scrolled");
+  element.classList.add('scrolled');
 };
 
 const hideScrollElement = (element) => {
-  element.classList.remove("scrolled");
+  element.classList.remove('scrolled');
 };
 
 const handleScrollAnimation = () => {
@@ -56,11 +51,11 @@ const handleScrollAnimation = () => {
     if (elementInView(el, 1.25)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
-      hideScrollElement(el)
+      hideScrollElement(el);
     }
-  })
-}
+  });
+};
 
-window.addEventListener("scroll", () => { 
+window.addEventListener('scroll', () => {
   handleScrollAnimation();
 });
