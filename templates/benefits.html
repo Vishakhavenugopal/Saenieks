@@ -24,12 +24,10 @@
     <div class="sponsor-container">
       <h2>Our Sponsors</h2>
       <div class="customer-logos">
-        <img src="/assets/sponsors/cycle.webp" />
-        <img src="/assets/sponsors/indian-oil.webp" />
-        <img src="/assets/sponsors/sb.webp" />
-        <img src="/assets/sponsors/ss-vector.webp" />
-        <img src="/assets/sponsors/ss.webp" />
-        <img src="/assets/sponsors/mobil.webp" />
+        {% set spons = load_data(path="data/sponsors.json", format="json") %} 
+        {% for sponsor in spons %}
+          <img src="{{ sponsor }}" />
+        {% endfor %}
       </div>
     </div>
     <div class="benefits">
