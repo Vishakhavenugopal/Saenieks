@@ -1,9 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
 :root {
   font-size: 10px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   min-height: 100vh;
+  background-color: #191919;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
 }
 
 .heading {
@@ -23,9 +38,7 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 0 2rem 2rem;
-  max-width: 100rem;
+  margin: -1rem -1rem;
 }
 
 .gallery-item {
@@ -45,4 +58,17 @@ body {
 
 .gallery-image:hover {
   transform: scale(1.15);
+}
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
 }

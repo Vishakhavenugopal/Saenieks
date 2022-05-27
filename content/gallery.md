@@ -1,3 +1,3 @@
 +++
-template = "gallery.html" 
+template = "gall.html" 
 +++
