@@ -61,7 +61,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .brand h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
@@ -269,8 +269,8 @@ p {
     font-size: 48px;
   }
 
-  h1.section-title {
-    font-size: 48px;
+  .section-title {
+    font-size: 40px;
   }
 }
 
@@ -331,7 +331,7 @@ p {
     line-height: 32px;
     padding-left: 16px;
   }
-  
+
   li {
     font-size: 18px;
   }
