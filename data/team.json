@@ -3,7 +3,7 @@
     {
       "name": "Vis V",
       "designation": "Dev",
-      "img": "assets/2018.webp"
+      "img": "/assets/2018.webp"
     },
     {
       "name": "David Romero",
@@ -14,7 +14,7 @@
   "members": [
     {
       "name": "Vishaka V",
-      "img": "assets/2018.webp"
+      "img": "/assets/2018.webp"
     }
   ]
 }
