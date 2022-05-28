@@ -1,18 +1,19 @@
 {% import "macros.html" as macros %}
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/style2.css" />
-    <link rel="stylesheet" href="/common.css" />
-    <title>Team Saenieks</title>
-  </head>
+{% extends "_base.html" %}
 
-  <body>
-    {{ macros::NavigationBar() }}
+<!-- prettier-ignore -->
+{% block head -%}
+  {{ super() }}
+  <title>Team Saenieks</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/style2.css" />
+  <script src="/app.js" defer></script>
+{% endblock head -%}
+
+
+<!-- prettier-ignore -->
+{% block content %}
 
     <section id="hero">
       <div class="hero container">
@@ -134,6 +135,5 @@
         <p>Copyright © 2022 Vishakha V. All rights reserved</p>
       </div>
     </section>
-    <script src="/app.js"></script>
-  </body>
-</html>
+
+{% endblock content %}

@@ -1,47 +1,46 @@
-{% import "macros.html" as macros %}
+{% extends "_base.html" %}
 
-<html>
-  <head>
-    <title>Team</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/team.css" />
-    <link rel="stylesheet" href="/common.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-  </head>
+<!-- prettier-ignore -->
+{% block head -%}
+  {{ super() }}
+  <link rel="stylesheet" href="/team.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+{% endblock head -%}
 
-  <body>
-    {{ macros::NavigationBar() }}
 
-    <div class="container">
-      <h3>Core Members</h3>
-      {% set team_json = load_data(path="data/team.json", format="json") %}
-      <div class="core-grid">
-        {# ADD THE TEAM MEMEBERS in data/team.json #}
-        {% set corelist = team_json.core %}
-        {% for mem in corelist %}
-          <div class="card">
-            <div class="card_img">
-              <img src="{{ mem.img }}" alt="" />
-            </div>
-            <div class="card_body">
-              <h2 class="card_title">{{ mem.name }}</h2>
-              <h6 class="designation">{{ mem.designation }}</h6>
-            </div>
-          </div>
-        {% endfor %}
+<!-- prettier-ignore -->
+{% block content %}
+
+<div class="container">
+  <h3>Core Members</h3>
+  {% set team_json = load_data(path="data/team.json", format="json") %}
+  <div class="core-grid">
+    {# ADD THE TEAM MEMEBERS in data/team.json #}
+    {% set corelist = team_json.core %}
+    {% for mem in corelist %}
+      <div class="card">
+        <div class="card_img">
+          <img src="{{ mem.img }}" alt="" />
+        </div>
+        <div class="card_body">
+          <h2 class="card_title">{{ mem.name }}</h2>
+          <h6 class="designation">{{ mem.designation }}</h6>
+        </div>
       </div>
+    {% endfor %}
+  </div>
 
-      <h3>Members</h3>
-      <div class="members-grid">
-        {% set corelist = team_json.members %}
-        {% for mem in corelist %}
-          <div class="card">
-            <div class="card_img">
-              <img src="{{ mem.img }}" alt="" />
-            </div>
-          </div>
-        {% endfor %}
+  <h3>Members</h3>
+  <div class="members-grid">
+    {% set corelist = team_json.members %}
+    {% for mem in corelist %}
+      <div class="card">
+        <div class="card_img">
+          <img src="{{ mem.img }}" alt="" />
+        </div>
       </div>
-    </div>
-  </body>
-</html>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}
