@@ -22,11 +22,31 @@
 
 /* Hero Section */
 #hero {
-  background-image: url('/assets/background_image.webp');
-  background-size: cover;
-  background-position: top center;
+  background-color: #030303;
   position: relative;
   z-index: 1;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  img {
+    width: 550px;
+    opacity: 0.7;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 #hero::after {
   content: '';
@@ -39,11 +59,7 @@
   opacity: 0.7;
   z-index: -1;
 }
-#hero .hero {
-  margin: 0 auto;
-  padding: 0 50px;
-  justify-content: flex-start;
-}
+
 #hero h1 {
   display: block;
   width: fit-content;
