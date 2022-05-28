@@ -12,10 +12,30 @@
       <meta name="description" content="{{ config.description }}" />
       <link rel="preconnect" href="https://fonts.gstatic.com/" />
       <link rel="stylesheet" href="/common.css" />
+      <script src="/common.js" defer></script>
     {% endblock head %}
   </head>
   <body>
-    {{ macros::NavigationBar() }}
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <a href="/" class="brand">
+            <h1>Team Sae<span>nie</span>ks</h1>
+          </a>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="/team">Team</a></li>
+              <li><a href="/benefits">Sponsorship</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     {% block content %} {% endblock content %}
   </body>
