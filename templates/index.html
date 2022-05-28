@@ -2,110 +2,113 @@
 
 <!-- prettier-ignore -->
 {% block head -%}
-  {{ super() }}
-  <title>Team Saenieks</title>
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="/style2.css" />
-  <script src="/app.js" defer></script>
+{{ super() }}
+<title>Team Saenieks</title>
+<link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/style2.css" />
+<script src="/app.js" defer></script>
 {% endblock head -%}
 
 
 <!-- prettier-ignore -->
 {% block content %}
 
-    <section id="hero">
-      <div class="hero container">
-        <div>
-          <h1>Team<span></span></h1>
-          <h1>SAENIEKS<span></span></h1>
-          <a href="#projects" type="button" class="cta">Achievements</a>
-        </div>
-        <img src="assets/logox3.png" />
-      </div>
-    </section>
+<section id="hero">
+  <div class="hero container">
+    <div>
+      <h1>Team<span></span></h1>
+      <h1>SAENIEKS<span></span></h1>
+      <a href="#projects" type="button" class="cta">Achievements</a>
+    </div>
+    <img src="assets/logox3.png" />
+  </div>
+</section>
 
-    <!--About section start-->
-    <section class="about" id="about">
-      <div class="about-img scroll-element js-scroll slide-left">
-        <img src="/assets/about.webp" />
-      </div>
-      <div class="about-text">
-        <h2>About Us</h2>
-        <h5>National Level <span>Off road Racing Team</span></h5>
-        <p class="scroll-element js-scroll slide-right">
-          Team SAENIEKS is a national level off road racing team built by a group of auto passionate engineers from
-          <a href="https://nie.ac.in">The National Institute of Engineering, Mysore</a>. Our proud journey started back in 2015 which showed a new
-          dimension to the abilities of the students of NIE. We design, simulate and fabricate the whole All-terrain vehicle and compete in various
-          national level events. Our goal is to build a car that can withstand anything thrown at us at these events and to come out on top.
-        </p>
-        <button type="button">Contact Us</button>
-      </div>
-    </section>
+<!--About section start-->
+<section class="about" id="about">
+  <div class="about-img scroll-element js-scroll slide-left">
+    <img src="/assets/about.webp" />
+  </div>
+  <div class="about-text">
+    <h2>About Us</h2>
+    <h5>National Level <span>Off road Racing Team</span></h5>
+    <p class="scroll-element js-scroll slide-right">
+      Team SAENIEKS is a national level off road racing team built by a group of auto passionate engineers from
+      <a href="https://nie.ac.in">The National Institute of Engineering, Mysore</a>. Our proud journey started back in
+      2015 which showed a new
+      dimension to the abilities of the students of NIE. We design, simulate and fabricate the whole All-terrain vehicle
+      and compete in various
+      national level events. Our goal is to build a car that can withstand anything thrown at us at these events and to
+      come out on top.
+    </p>
+    <!-- <button type="button">Contact Us</button> -->
+  </div>
+</section>
 
-    <section id="projects">
-      <div class="projects container">
-        <div class="projects-header">
-          <h1 class="section-title" style="color: white"><span>Ac</span>hievements</h1>
-        </div>
+<section id="projects">
+  <div class="projects container">
+    <div class="projects-header">
+      <h1 class="section-title" style="color: white"><span>Ac</span>hievements</h1>
+    </div>
 
-        <div class="all-projects">
-          {% set ach_json = load_data(path="data/achievements.json", format="json") %}
-          {% set data = ach_json.data %}
-          {% for ach in data %}
-            <div class="project-item scroll-element js-scroll slide-{{ ach.side }}">
-              <div class="project-info">
-                <h1 style="color: #ff4949">{{ ach.name }} <span>({{ ach.year }})</span></h1>
-                <ul>
-                  {% for item in ach.positions %}
-                    <li>{{ item }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
-              <div class="project-img">
-                <img src="{{ ach.image }}" alt="img" />
-              </div>
-            </div>
-          {% endfor %}
+    <div class="all-projects">
+      {% set ach_json = load_data(path="data/achievements.json", format="json") %}
+      {% set data = ach_json.data %}
+      {% for ach in data %}
+      <div class="project-item scroll-element js-scroll slide-{{ ach.side }}">
+        <div class="project-info">
+          <h1 style="color: #ff4949">{{ ach.name }} <span>({{ ach.year }})</span></h1>
+          <ul>
+            {% for item in ach.positions %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="project-img">
+          <img src="{{ ach.image }}" alt="img" />
         </div>
       </div>
-    </section>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-    <section id="contact">
-      <div class="contact container">
-        <div>
-          <h1 class="section-title"><span>Contact</span> info</h1>
+<section id="contact">
+  <div class="contact container">
+    <div>
+      <h1 class="section-title"><span>Contact</span> info</h1>
+    </div>
+    <div class="contact-items">
+      <div class="contact-item">
+        <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
+        <div class="contact-info">
+          <h2>+91 7829566307</h2>
+          <h2>+91 9483410801</h2>
         </div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
-            <div class="contact-info">
-              <h2>+91 7829566307</h2>
-              <h2>+91 9483410801</h2>
-            </div>
-          </div>
-          <a href="mailto:teamsaenieks@gmail.com" class="contact-item">
-            <img src="https://img.icons8.com/bubbles/100/000000/new-post.png" />
-            <div class="contact-info">
-              <h1>Email</h1>
-              <h2>teamsaenieks@gmail.com</h2>
-            </div>
+      </div>
+      <a href="mailto:teamsaenieks@gmail.com" class="contact-item">
+        <img src="https://img.icons8.com/bubbles/100/000000/new-post.png" />
+        <div class="contact-info">
+          <h1>Email</h1>
+          <h2>teamsaenieks@gmail.com</h2>
+        </div>
+      </a>
+      <div class="contact-item">
+        <div class="just-links">
+          <a href="https://www.instagram.com/team_saenieks/">
+            <img src="https://img.icons8.com/bubbles/100/000000/instagram-new--v2.png" />
+            Instagram
           </a>
-          <div class="contact-item">
-            <div class="just-links">
-              <a href="https://www.instagram.com/team_saenieks/">
-                <img src="https://img.icons8.com/bubbles/100/000000/instagram-new--v2.png" />
-                Instagram
-              </a>
-              <a href="https://www.linkedin.com/in/team-saenieks-873207193/" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/>
-                LinkedIn
-              </a>
-            </div>
-          </div>
+          <a href="https://www.linkedin.com/in/team-saenieks-873207193/" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" />
+            LinkedIn
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <p style="text-align: center;">Copyright © 2022 Team SAENIEKS.</p>
+<p style="text-align: center;">Copyright © 2022 Team SAENIEKS.</p>
 
 {% endblock content %}
