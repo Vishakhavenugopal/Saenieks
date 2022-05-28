@@ -1,0 +1,26 @@
+{% extends "_base.html" %}
+
+<!-- prettier-ignore -->
+{% block head -%}
+  {{ super() }}
+  <link rel="stylesheet" href="/gall.css" />
+{% endblock head -%}
+
+
+<!-- prettier-ignore -->
+{% block content %}
+
+<div class="gallery-container">
+  <h1 class="heading">Gallery</h1>
+
+  <div class="gallery">
+    {% set images = load_data(path="data/gallery.json", format="json") %}
+    {% for image in images %}
+      <div class="gallery-item">
+        <img src="{{ image }}" />
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}
