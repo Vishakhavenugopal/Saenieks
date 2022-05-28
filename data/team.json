@@ -1,20 +1,99 @@
 {
   "core": [
-    {
-      "name": "Vis V",
-      "designation": "Dev",
-      "img": "/assets/2018.webp"
-    },
-    {
-      "name": "David Romero",
-      "designation": "UI Designer",
-      "img": "https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-    }    
+      {
+          "name": "Manogna B Math",
+          "designation": "President",
+          "img": "/assets/team/mbm.webp"
+      },
+      {
+          "name": "Sriharsha K Bhat",
+          "designation": "Manager",
+          "img": "/assets/team/skb.webp"
+      }
   ],
   "members": [
+      {
+          "name": "Abhishek Basvangowdar",
+          "img": "/assets/team/ab.webp"
+      },
+      {
+          "name": "Abhishek Hiremath",
+          "img": "/assets/team/ah.webp"
+      },
+      {
+          "name": "Arjun Gowda",
+          "img": "/assets/team/agl.webp"
+      },
+      {
+          "name": "Akshay",
+          "img": "/assets/team/akshay.webp"
+      },
+      {
+          "name": "Anwesh Praharaj",
+          "img": "/assets/team/ap.webp"  
+      },
+      {
+          "name": "Arjun Dev",
+          "img": "/assets/team/ad.webp"
+      },
+      {
+          "name": "Dore Prasad R",
+          "img": "/assets/team/dp.webp"
+      },
+      {
+        "name": "Shriranjini Hebbar",
+        "img": "/assets/team/sh.webp"
+    },
     {
-      "name": "Vishaka V",
-      "img": "/assets/2018.webp"
-    }
+        "name": "Manaswini Gowda",
+        "img": "/assets/team/mg.webp"
+    },
+      {
+          "name": "K Gagandeep",
+          "img": "/assets/team/gd.webp"
+      },
+      {
+          "name": "Karthik Mohan",
+          "img": "/assets/team/km.webp"
+      },
+      {
+          "name": "Pranav Manjunath",
+          "img": "/assets/team/pm.webp"
+      },
+      {
+          "name": "Nithin R",
+          "img": "/assets/team/nr.webp"
+      },
+      {
+          "name": "Pavan P Mangaji",
+          "img": "/assets/team/ppm.webp"
+      },
+      {
+          "name": "Pratheek Bidappa M B",
+          "img": "/assets/team/pb.webp"
+      },
+      {
+          "name": "Preetham M",
+          "img": "/assets/team/preetham.webp"
+      },
+      {
+          "name": "Rahul S",
+          "img": "/assets/team/rs.webp"
+      },
+      {
+          "name": "Sukesh Devadiga",
+          "img": "/assets/team/sd.webp"
+      },
+      {
+          "name": "Vinay Kumar S B",
+          "img": "/assets/team/vk.webp"
+      },
+      {
+          "name": "Yallamati Syed Sonu",
+          "img": "/assets/team/yss.webp"
+      }
+      
   ]
+  
+
 }

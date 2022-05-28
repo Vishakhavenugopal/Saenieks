@@ -2,9 +2,9 @@
 
 <!-- prettier-ignore -->
 {% block head -%}
-  {{ super() }}
-  <link rel="stylesheet" href="/team.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+{{ super() }}
+<link rel="stylesheet" href="/team.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
 {% endblock head -%}
 
 
@@ -18,15 +18,15 @@
     {# ADD THE TEAM MEMEBERS in data/team.json #}
     {% set corelist = team_json.core %}
     {% for mem in corelist %}
-      <div class="card">
-        <div class="card_img">
-          <img src="{{ mem.img }}" alt="" />
-        </div>
-        <div class="card_body">
-          <h2 class="card_title">{{ mem.name }}</h2>
-          <h6 class="designation">{{ mem.designation }}</h6>
-        </div>
+    <div class="card">
+      <div class="card_img">
+        <img src="{{ mem.img }}" alt="" />
       </div>
+      <div class="card_body">
+        <h2 class="card_title">{{ mem.name }}</h2>
+        <h6 class="designation">{{ mem.designation }}</h6>
+      </div>
+    </div>
     {% endfor %}
   </div>
 
@@ -34,11 +34,14 @@
   <div class="members-grid">
     {% set corelist = team_json.members %}
     {% for mem in corelist %}
-      <div class="card">
-        <div class="card_img">
-          <img src="{{ mem.img }}" alt="" />
-        </div>
+    <div class="card">
+      <div class="card_img">
+        <img src="{{ mem.img }}" alt="" />
       </div>
+      <div class="card_body">
+        <h2 class="card_title">{{ mem.name }}</h2>
+      </div>
+    </div>
     {% endfor %}
   </div>
 </div>
