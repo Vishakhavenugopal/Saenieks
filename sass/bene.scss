@@ -46,9 +46,9 @@ h2 {
   text-align: center;
   border-radius: 5px;
   background: #262729;
-  width: clamp(400px, 50%, 600px);
-  padding: 0px 10px 5px;
-  margin: 20px auto;
+  width: clamp(350px, 90%, 550px);
+  padding: 0px 5px 5px;
+  margin: 15px auto;
 }
 .benefits-list {
   text-align: left;
@@ -60,7 +60,7 @@ h2 {
   h3 {
     font-family: Roboto;
     font-size: 18px;
-    margin: 5px;
+    margin: 7px;
     padding: 5px;
     border-bottom: 1px solid #ece1e1;
     color: crimson;
